@@ -1,24 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import "../src/componets/custom/style.css";
+import Home from './componets/pages/Home';
+import Footer from '../src/componets/footer/Footer';
+import NavBar from "../src/componets/topnav/Navbar"
+
+
+
+
 
 function App() {
+  const location = useLocation();
+
+  // Paths where NavBar should be hidden
+  const hiddenPaths = new Set([
+    "/EmpDashBoard",
+  ]);
+
+  // Paths where Footer should be hidden
+  const hiddenFooter1 = new Set([
+    "/",
+  ]);
+
+  const shouldHideNavbar = hiddenPaths.has(location.pathname);
+  const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+      {!shouldHideNavbar && <NavBar />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+
+      </Routes>
+      {!shouldHideFooter1 && <Footer />}
+    </>
+
   );
 }
 
