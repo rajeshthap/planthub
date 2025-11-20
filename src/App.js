@@ -3,11 +3,15 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import "../src/componets/custom/style.css";
-import Home from './componets/pages/Home';
-import Footer from '../src/componets/footer/Footer';
-import NavBar from "../src/componets/topnav/Navbar"
 
+import "../src/components/custom/style.css";
+
+
+
+
+import Home from '../src/components/pages/Home';
+import Footer from '../src/components/footer/Footer'
+import NavBar from '../src/components/topnav/Navbar'
 
 
 
