@@ -6,23 +6,16 @@ import {
   FaChevronDown,
   FaChevronRight,
   FaChartLine,
-  FaUserCheck,
+ 
 } from "react-icons/fa";
-import axios from "axios";
+
 import Logo from "../../assets/images/plant-logo.png";
 import "../../assets/css/LeftNav.css";
 import { Link } from "react-router-dom";
-import { PiPaypalLogo, PiUserListBold, PiUsersThreeBold } from "react-icons/pi";
-import { RiPlayListAddFill, RiSettings2Line } from "react-icons/ri";
-import { ImProfile } from "react-icons/im";
+
 import { TbDeviceDesktopSearch } from "react-icons/tb";
-import { GrDocumentPerformance } from "react-icons/gr";
-import { IoDocumentsOutline } from "react-icons/io5";
-import { IoIosNotifications } from "react-icons/io";
-import { AiOutlineFile } from "react-icons/ai";
-import { CgProfile } from "react-icons/cg";
-// import BRLogo from "../../assets/images/brainrock_logo.png";
-import { FaUsersViewfinder } from "react-icons/fa6";
+
+
 
 
 
@@ -47,7 +40,7 @@ const menuItems = [
   {
       icon: <FaTachometerAlt />,
       label: "Contact Us",
-      path: "/EmpList",
+      path: "/DonateDashBoard",
       active: true,
     },
 
@@ -60,73 +53,15 @@ const menuItems = [
  
       submenu: [
         {
-          label: "Job Openings",
-          path: "/EmployeeManagement",
+          label: "Donate List",
+          path: "/DonateDashBoard",
           icon: <FaChartLine />,
         },
-        {
-          label: "Candidate Applications",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-        {
-          label: "Interview Scheduling",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-        {
-          label: "Shortlisting & Hiring",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-        {
-          label: "Offer Letters",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-        {
-          label: "Onboarding Process",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-       
-       
-       
+           
       ],
     },
  
-   {
-      icon: <IoIosNotifications />,
-      label: "Notifications",
  
-      submenu: [
-        {
-          label: "Leave / Attendance Alerts",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-        {
-          label: "Birthday & Anniversary Wishes",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-        {
-          label: "Payroll Notification",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-        {
-          label: "Recruitment Updates",
-          path: "/EmployeeManagement",
-          icon: <FaChartLine />,
-        },
-       
-       
-       
-       
-       
-      ],
-    },
  
     
   ];

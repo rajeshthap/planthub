@@ -1,12 +1,74 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
+import React from "react";
+ // import css
 
-const OurTeam = () => {
+// Example images — replace with your own
+
+
+import "../../assets/css/TeamCard.css"
+import { Container, Row } from "react-bootstrap";
+import Paras from "../../assets/images/paras.png";
+import Pankaj from "../../assets/images/pankaj.png";
+import Vijay from "../../assets/images/vijay.png";
+import Parshant from "../../assets/images/surendra1.png";
+import surendra2 from "../../assets/images/surendra2.png";
+import Footer from "../footer/Footer";
+
+function OurTeam() {
+  const team = [
+    {
+      img: Paras,
+      name: "MR. PARAS TIWARI",
+      role: "Secretary",
+    },
+    {
+      img: surendra2,
+      name: "MR. PRASHANT SINGH AITHANI",
+      role: "Chairman",
+    },
+    {
+      img: Vijay,
+      name: "MR. VIJAY KUMAR AGGARWAL",
+      role: "Treasurer",
+    },
+     {
+      img: Pankaj,
+      name: "MR. PANKAJSATI",
+      role: "EducationalAdvisor",
+    },
+     {
+      img: Parshant,
+      name: "DR. SURENDRASINGH",
+      role: "Legal Adviso",
+    },
+    
+  ];
+
   return (
-      <Container>
-         <div className='plant-main-box'>Our Team</div>
+ <>
+      <Container className='py-4 mt-4 pt-container'>
+      <Row className=' shadow p-4 rounded bg-white pt-contact-team '>
+ 
+        <div className=' mt-2'><h2>Our Team</h2>
+           <div className="team-container">
+      {team.map((member, index) => (
+        <div className="team-card" key={index}>
+          <img src={member.img} alt={member.name} className="team-photo" />
+
+          <h3 className="team-name">{member.name}</h3>
+
+          <p className="team-role">{member.role}</p>
+        </div>
+      ))}
+    </div>
+       
+        </div>
+ 
+      </Row>
+ 
     </Container>
-  )
+   <Footer />
+  </>
+  );
 }
 
-export default OurTeam
+export default OurTeam;

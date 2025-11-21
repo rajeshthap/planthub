@@ -1,0 +1,61 @@
+/* Make each column block on mobile */
+.temp-rwd-table td {
+    display: block;
+    padding: 0.5em 1em;
+}
+/* Odd Rows */
+.temp-rwd-table tr:nth-child(odd):not(:first-child) {
+    background-color: #ebf3f9;
+}
+/* Spacing */
+.temp-rwd-table td:first-child {
+    margin-top: 0.5em;
+}
+.temp-rwd-table td:last-child {
+    margin-bottom: 0.5em;
+}
+/* Label for mobile view */
+.temp-rwd-table td:before {
+    content: attr(data-th) ": ";
+    width: 120px;
+    display: inline-block;
+    font-weight: 600;
+    color: #000;
+}
+.temp-rwd-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.pt-table-th tr th{
+    font-size: 12px;
+    background-color: #0080ff;
+    color: #fff;
+}
+/* Hover Effect for Desktop */
+@media screen and (min-width: 600px) {
+    .temp-rwd-table tr:hover:not(:first-child) {
+        background-color: #d8e7f3;
+    }
+
+    .temp-rwd-table th,
+    .temp-rwd-table td {
+        display: table-cell;
+        padding: 1em !important;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .temp-rwd-table td:before {
+        display: none;
+    }
+
+    .temp-rwd-table th:first-child,
+    .temp-rwd-table td:first-child {
+        padding-left: 0;
+    }
+
+    .temp-rwd-table th:last-child,
+    .temp-rwd-table td:last-child {
+        padding-right: 0;
+    }
+}

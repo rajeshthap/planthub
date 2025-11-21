@@ -22,11 +22,7 @@ const InnerDashBoard = () => {
   const [isTablet, setIsTablet] = useState(false);
   const navigate = useNavigate();
 
- 
-
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
-
-
 
   return (
     <div className="dashboard-container">

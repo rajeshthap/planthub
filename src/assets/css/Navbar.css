@@ -1,0 +1,24 @@
+.pt-login {
+  background-color: orange;   /* Your theme color */
+  color: white !important;
+ padding: 4px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.pt-login:hover {
+  background-color: #744e07;  /* Slight darker for hover */
+  color: #ffffff !important;
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 10px rgba(75, 73, 172, 0.4);
+}
+
+.pt-login:active {
+  transform: translateY(0px);  
+  box-shadow: none;
+}

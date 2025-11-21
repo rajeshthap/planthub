@@ -70,17 +70,7 @@ function HeaderTop ({ toggleSidebar, searchTerm, setSearchTerm }) {
           </Col>
 
           <Col>
-            <div className="search-bar">
-              <FaSearch className="search-icon" />
-              {/* 2. Add value and onChange to the existing input. No other changes here. */}
-              <input
-                type="text"
-                className="search-input"
-                placeholder="Search by Name, ID, Email..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </div>
+           
           </Col>
 
           <Col xs="auto">
@@ -122,7 +112,7 @@ function HeaderTop ({ toggleSidebar, searchTerm, setSearchTerm }) {
                     roundedCircle
                     className="user-avatar"
                   />
-                  <span className="user-name d-none d-md-inline">John Doe</span>
+                  <span className="user-name d-none d-md-inline">Amit</span>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>

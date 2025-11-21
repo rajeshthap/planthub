@@ -14,53 +14,47 @@ const CarouselImage = () => {
     {
       url: Plant1,
       alt: "Plant 1",
-      title: "Professional IT Solution",
-      subtitle: "Best IT Solution Company",
-      description: "We deliver innovative IT solutions to help your business grow."
+      title: " Save Trees, Save Himalayas",
+      subtitle: " Together we protect nature, one plant at a time.",
+      description: "Youth for Himalayas Trust is committed to restoring the natural beauty of our mountains through plantation, conservation, and community participation. Every tree we save brings life back to the Himalayas."
     },
 
     { 
       url: Plant2,
        alt: "Plant 2",
-       title: "Professional IT Solution",
-      subtitle: "Best IT Solution Company",
-      description: "We deliver innovative IT solutions to help your business grow."
+       title: " Growing Green for Tomorrow",
+      subtitle: "Join us in restoring the Himalayan ecosystem with every sapling we plant.",
+      description: "We bring communities and youth together to plant native species, protect forest areas, and build a sustainable future for upcoming generations."
       },
     { 
       url: Plant3, 
       alt: "Plant 3",
-      title: "Professional IT Solution",
-      subtitle: "Best IT Solution Company",
-      description: "We deliver innovative IT solutions to help your business grow."
+      title: "Plant Today, Protect Forever",
+      subtitle: "Your one step towards nature becomes a lifetime of protection for the mountains.",
+      description: "Our plantation programs and tree-care initiatives focus not only on planting trees but nurturing them until they grow into strong protectors of the Himalayas."
      },
     { 
       url: Plant4, 
       alt: "Plant 4",
-      title: "Professional IT Solution",
-      subtitle: "Best IT Solution Company",
-      description: "We deliver innovative IT solutions to help your business grow."
+      title: "Youth Leading the Green Revolution",
+      subtitle: " Empowering communities to safeguard the Himalayas",
+      description: "Through awareness, action, and involvement, we are building a generation of young environmental leaders dedicated to preserving nature."
      },
     {
        url: Plant5, 
        alt: "Plant 5" ,
-       title: "Professional IT Solution",
-      subtitle: "Best IT Solution Company",
-      description: "We deliver innovative IT solutions to help your business grow."
+       title: "Nature Needs You",
+      subtitle: "Stand with us to preserve forests, save plants, and heal the environment.",
+      description: "Your participation helps combat deforestation, soil erosion, pollution, and the declining health of our precious mountain ecosystems."
       },
     { 
       url: Plant6,
        alt: "Plant 6",
-       title: "Professional IT Solution",
-      subtitle: "Best IT Solution Company",
-      description: "We deliver innovative IT solutions to help your business grow."
+       title: "Together for a Greener Himalaya",
+      subtitle: " Uniting youth and communities to plant, protect, and preserve.",
+      description: "We believe true change begins when people come together. Our projects focus on long-term conservation and environmental restoration across Himalayan regions."
        },
-    { 
-      url: Plant7,
-       alt: "Plant 7",
-       title: "Professional IT Solution",
-      subtitle: "Best IT Solution Company",
-      description: "We deliver innovative IT solutions to help your business grow."
-       }
+   
 
   ];
 

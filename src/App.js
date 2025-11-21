@@ -24,6 +24,7 @@ import MainNavbar from './components/topnav/MainNavbar';
 import InnerDashBoard from './components/dashboard/InnerDashBoard';
 import LeftNav from './components/dashboard/LeftNav';
 import "../src/components/custom/custom.css";
+import DonateDashBoard from './components/dashboard/DonateDashBoard';
 
 
 
@@ -33,6 +34,7 @@ function App() {
   // Paths where NavBar should be hidden
   const hiddenPaths = new Set([
     "/InnerDashBoard",
+    "/DonateDashBoard",
   ]);
 
   // Paths where Footer should be hidden
@@ -60,6 +62,7 @@ function App() {
               <Route path="/OurWork" element={<OurWork/>} />
               <Route path="/LeftNav" element={<LeftNav/>} />
               <Route path="/InnerDashBoard" element={<InnerDashBoard/>} />
+              <Route path="/DonateDashBoard" element={<DonateDashBoard/>} />
         
       </Routes>
       {!shouldHideFooter1}
