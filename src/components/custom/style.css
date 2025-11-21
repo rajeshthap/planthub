@@ -104,6 +104,7 @@ body {
   font-weight: 500;
   margin: 0 2px;
   transition: all 0.3s ease;
+  font-size: 14px;
 }
 
 
@@ -150,7 +151,25 @@ body {
 .pt-logo {
   max-width: 74px;
   height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.comp-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: green;
+
+}
+
+.state-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+
+}
+
 
 .hero-title {
   font-size: 3.5rem;

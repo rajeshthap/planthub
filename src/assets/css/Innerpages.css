@@ -1,28 +1,99 @@
-.plant-main-box{
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
-    background-color: #decdcd;
+.pt-contact{
+        margin-top: 40px;
+        
 }
 
-.plant-section {
-margin-top: 12px;
-  background-color: #f8f9fa; /* light gray background */
+.pt-address{
+     margin-top: 40px;
 }
- 
-.plant-main-box {
-  background-color: #fff;
-  padding: 30px;
- 
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+/* Gallery.css *//* PlantationGallery.css */
+.pt-gallery{
+    margin-top: 40px;
 }
- 
-.plant-main-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+.gallery-container {
+width: 100%;
+padding: 40px 20px;
 }
- 
-.plant-main-box h2 {
-  margin-bottom: 16px;
-  font-weight: 600;
+
+
+.gallery-title {
+text-align: center;
+font-size: 28px;
+font-weight: 700;
+margin-bottom: 30px;
+color: #2f4f4f;
+text-transform: uppercase;
+letter-spacing: 1px;
 }
- 
+
+/* Tabs Styling */
+.tabs-container {
+display: flex;
+justify-content: center;
+margin-bottom: 25px;
+gap: 15px;
+}
+
+
+.tab-button {
+padding: 10px 22px;
+border-radius: 25px;
+border: 2px solid #2f6f4f;
+background: white;
+font-size: 16px;
+font-weight: 600;
+color: #2f6f4f;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+
+.tab-button:hover {
+background: #2f6f4f;
+color: white;
+transform: translateY(-3px);
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.active-tab {
+background: #2f6f4f;
+color: white;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding-bottom: 40px;
+}
+
+
+.gallery-card {
+overflow: hidden;
+border-radius: 12px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease-in-out;
+}
+
+
+.gallery-card:hover {
+transform: scale(1.05);
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+.gallery-image {
+width: 100%;
+height: 250px;
+object-fit: cover;
+transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-image {
+transform: scale(1.12);
+}

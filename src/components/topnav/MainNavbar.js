@@ -13,6 +13,10 @@ function MainNavbar() {
         <BsNavbar.Brand href="/" className="brand-logo text-black fw-bold">
           <div className="pt-logo">
             <img src={Logo} alt="Logo" className="img-fluid" />
+            <span >
+              <div className="comp-name"> Youth For Himalayas Trust</div>
+              <div className="state-name">Uttarakhand</div>
+            </span>
           </div>
         </BsNavbar.Brand>
 
