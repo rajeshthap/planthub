@@ -5,7 +5,15 @@ import { Navbar, Nav, Container, Button, Row, Col, Card, Form, Carousel, Dropdow
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CarouselImage from '../Carousel/CarouselImage';
 import Green from "../../assets/images/Green.jpg";
-
+import PlantI from "../../assets/images/PlantI.jpg";
+import Forest from "../../assets/images/Forest.png";
+import HimalayaB from "../../assets/images/HimalayaB.jpg";
+import Plastic from "../../assets/images/Plastic.jpg";
+import Climate from "../../assets/images/Climate.png";
+import Water from "../../assets/images/Water.jpg";
+import Sacred from "../../assets/images/Sacred.jpg";
+import Urban from "../../assets/images/Urban.webp";
+import Treehealth from "../../assets/images/Treehealth.jpg";
 
 
 
@@ -69,55 +77,65 @@ const Home = () => {
       id: 'rural-afforestation',
       title: ' Adopt-a-Plant Initiative',
       description: 'Encouraging individuals, families, and students to adopt a sapling and take responsibility for its growth.',
-      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: PlantI,
+      alt:"PlantI"
     },
     {
       id: 'urban-greening',
       title: 'Community Forest Protection Program',
       description: 'Working with local communities to protect existing forests from cutting, grazing, and fire hazards.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: Forest,
+      alt:"Forest"
     },
      {
       id: 'urban-greening',
       title: ' Himalayan Biodiversity Restoration',
       description: 'Planting native species to support local wildlife, prevent soil erosion, and strengthen the ecosystem.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: HimalayaB,
+      alt:"HimalayaB"
     },
      {
       id: 'urban-greening',
       title: 'Plastic-Free Himalayas Mission',
       description: 'Conducting clean-up drives and awareness programs to reduce pollution in forest and trekking areas.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: Plastic,
+       alt:"Plastic"
     },
      {
       id: 'urban-greening',
       title: ' Climate Awareness & Youth Workshops',
       description: 'Educating school and college students about climate change, tree conservation, and sustainable living.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: Climate,
+      alt:"Climate"
+
     },
      {
       id: 'urban-greening',
       title: ' Water & Soil Conservation Projects',
       description: 'Building check dams, preventing landslides, and promoting rainwater harvesting to protect the environment.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: Water,
+      alt:"Water"
     },
      {
       id: 'urban-greening',
       title: ' Sacred Tree Protection Program',
       description: 'Identifying and preserving old and culturally significant trees in Himalayan communities.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: Sacred,
+      alt:"Sacred"
     },
      {
       id: 'urban-greening',
       title: '  Urban Green Corners Initiative',
       description: 'Creating small forests, herbal gardens, and green corners in towns and public spaces.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: Urban,
+      alt:"urban"
     },
      {
       id: 'urban-greening',
       title: ' Tree Health & Care Program',
       description: 'Regular maintenance of planted saplings, including watering, mulching, fencing, and monitoring.',
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      image: Treehealth,
+      alt:"Treehealth"
     }
   ];
 
@@ -163,7 +181,7 @@ const Home = () => {
           <Row className="align-items-center">
             <Col lg={6} className="mb-4 mb-lg-0">
               <img
-                src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                src={Forest}
                 alt="Planting trees"
                 className="img-fluid rounded about-image"
               />
