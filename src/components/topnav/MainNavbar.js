@@ -40,15 +40,15 @@ function MainNavbar() {
             <Link to="/MissionVision" className="nav-link text-black">
               Mission & Vision
             </Link>
-            <Link to="/OurProject" className="nav-link text-black">
+            <a href="/#projects" className="nav-link text-black">
               Our Project
-            </Link>
+            </a>
             <Link to="/OurTeam" className="nav-link text-black">
               Our Team
             </Link>
-            <Link to="/OurWork" className="nav-link text-black">
+            {/* <Link to="/OurWork" className="nav-link text-black">
               Our Work
-            </Link>
+            </Link> */}
             <Link to="/Gallery" className="nav-link text-black">
               Gallery
             </Link>
