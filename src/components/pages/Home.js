@@ -4,6 +4,8 @@ import { Navbar, Nav, Container, Button, Row, Col, Card, Form, Carousel, Dropdow
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CarouselImage from '../Carousel/CarouselImage';
+import Green from "../../assets/images/Green.jpg";
+
 
 
 
@@ -58,20 +60,63 @@ const Home = () => {
   const projectsData = [
     {
       id: 'green-schools',
-      title: 'Green Schools',
-      description: 'Creating green spaces in schools to educate children about environmental conservation.',
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      title: 'Green Himalaya Plantation Drive',
+      description: 'Large-scale tree plantation campaigns across villages, schools, and hill slopes to restore green cover.',
+      image: Green,
+      alt: "Green",
     },
     {
       id: 'rural-afforestation',
-      title: 'Rural Afforestation',
-      description: 'Planting trees in rural areas to improve livelihoods and restore ecosystems.',
+      title: ' Adopt-a-Plant Initiative',
+      description: 'Encouraging individuals, families, and students to adopt a sapling and take responsibility for its growth.',
       image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
     },
     {
       id: 'urban-greening',
-      title: 'Urban Greening',
-      description: 'Transforming urban spaces with greenery to combat pollution and improve air quality.',
+      title: 'Community Forest Protection Program',
+      description: 'Working with local communities to protect existing forests from cutting, grazing, and fire hazards.',
+      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+     {
+      id: 'urban-greening',
+      title: ' Himalayan Biodiversity Restoration',
+      description: 'Planting native species to support local wildlife, prevent soil erosion, and strengthen the ecosystem.',
+      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+     {
+      id: 'urban-greening',
+      title: 'Plastic-Free Himalayas Mission',
+      description: 'Conducting clean-up drives and awareness programs to reduce pollution in forest and trekking areas.',
+      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+     {
+      id: 'urban-greening',
+      title: ' Climate Awareness & Youth Workshops',
+      description: 'Educating school and college students about climate change, tree conservation, and sustainable living.',
+      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+     {
+      id: 'urban-greening',
+      title: ' Water & Soil Conservation Projects',
+      description: 'Building check dams, preventing landslides, and promoting rainwater harvesting to protect the environment.',
+      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+     {
+      id: 'urban-greening',
+      title: ' Sacred Tree Protection Program',
+      description: 'Identifying and preserving old and culturally significant trees in Himalayan communities.',
+      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+     {
+      id: 'urban-greening',
+      title: '  Urban Green Corners Initiative',
+      description: 'Creating small forests, herbal gardens, and green corners in towns and public spaces.',
+      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+     {
+      id: 'urban-greening',
+      title: ' Tree Health & Care Program',
+      description: 'Regular maintenance of planted saplings, including watering, mulching, fencing, and monitoring.',
       image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
     }
   ];
@@ -101,14 +146,14 @@ const Home = () => {
   return (
     <div>
       {/* Navbar */}
-   
+
 
       {/* Hero Section */}
       <section id="home" className="hero-section">
         <Container fluid className='p-0'>
-         
-            <CarouselImage/>
-          
+
+          <CarouselImage />
+
         </Container>
       </section>
 
@@ -124,19 +169,17 @@ const Home = () => {
               />
             </Col>
             <Col lg={6}>
-              <h2 className="section-title">About SankalpTaru</h2>
+              <h2 className="section-title">About Us –Youth for Himalayas Trust</h2>
               <p className="section-subtitle">
-                SankalpTaru is a non-profit organization dedicated to environmental conservation
-                through tree plantation and sustainable practices.
+                Youth for Himalayas Trust is a dedicated environmental initiative committed to protecting, nurturing, and restoring the natural heritage of the Himalayan region. We believe that every plant, tree, and ecosystem plays a vital role in preserving the fragile balance of our mountains.
               </p>
               <p>
-                Founded in 2013, we have planted over 1 million trees across India, creating
-                green spaces, restoring ecosystems, and empowering communities. Our unique approach
-                combines technology with grassroots efforts to ensure every sapling thrives.
+                Our mission is simple yet powerful — <b>to inspire youth and local communities to take responsibility for nature</b>, beginning with small but impactful actions like planting and caring for saplings. Each plant we nurture represents our promise to safeguard the Himalayas for future generations.
+                Through awareness programs, community participation, plantation drives, and sustainable development activities, the Trust works tirelessly to promote ecological conservation.
               </p>
               <p>
-                We work with rural communities, schools, and corporate partners to create a greener,
-                healthier planet for future generations.
+                With the energy of the youth and the wisdom of the mountains, we aim to create a greener, healthier, and more resilient Himalayan environment.
+                Join us in our journey as we protect nature, one plant at a time.
               </p>
             </Col>
           </Row>
@@ -324,7 +367,7 @@ const Home = () => {
         </Container>
       </section>
 
-    
+
 
       {/* Custom CSS */}
 

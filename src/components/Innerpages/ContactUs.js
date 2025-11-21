@@ -192,7 +192,7 @@ const ContactUs = () => {
             </Col>
           </Row>
 
-          <Button type="submit" className="btn btn-primary btn-lg">
+          <Button type="submit" className="btn btn-primary btn-sm">
             Send Message
           </Button>
         </Form>

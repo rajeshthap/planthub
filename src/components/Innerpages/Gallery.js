@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../assets/css/Innerpages.css";
 
 import Plant1 from "../../assets/images/Plant1.jpg";
 import Plant2 from "../../assets/images/Plant2.jpg";
@@ -13,6 +14,12 @@ import Plant10 from "../../assets/images/Plant10.jpg";
 import Plant11 from "../../assets/images/Plant11.jpg";
 import Plant12 from "../../assets/images/Plant12.jpg";
 import Plant13 from "../../assets/images/Plant13.jpg";
+import Plant14 from "../../assets/images/Plant14.jpg";
+import Plant15 from "../../assets/images/Plant15.jpg";
+import Plant16 from "../../assets/images/Plant16.jpg";
+import Plant17 from "../../assets/images/Plant17.jpg";
+import Plant18 from "../../assets/images/Plant18.webp";
+import { Container } from "react-bootstrap";
 
 
 
@@ -29,15 +36,12 @@ const tabs = [
 
 const images = {plantation: [Plant1, Plant2,Plant3,Plant4,Plant5,Plant6,Plant7],
 agriculture: [Plant8,Plant9,Plant10,Plant11,Plant12,Plant13],
-events: [
-"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e", // people event gathering
-"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee", // outdoor community event
-"https://images.unsplash.com/photo-1508672019048-805c876b67e2" // nature event program
-]
+events: [Plant14,Plant15,Plant16,Plant17,Plant18]
 };
 
 
 return (
+  <Container className="py-4 mt-2 pt-container">
 <div className="gallery-container pt-gallery">
 <h2 className="gallery-title">Plantation & Agricultural Gallery</h2>
 
@@ -63,6 +67,7 @@ onClick={() => setActiveTab(tab.id)}
 ))}
 </div>
 </div>
+</Container>
 );
 };
 
