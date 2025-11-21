@@ -148,6 +148,10 @@ body {
   padding: 50px 0;
 }
 
+.social-icon {
+  color: green;
+}
+
 .pt-logo {
   max-width: 74px;
   height: auto;
@@ -202,7 +206,12 @@ body {
 .section-title {
   font-weight: bold;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: green
+}
+
+h2 {
+  color: green;
+  font-weight: 600;
 }
 
 .section-subtitle {

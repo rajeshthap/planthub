@@ -58,16 +58,16 @@ function MainNavbar() {
 
             {/* Social Icons */}
             <div className="d-flex align-items-center ms-3">
-              <a href="https://facebook.com" className="text-black me-2">
+              <a href="https://facebook.com" className="social-icon me-2">
                 <FaFacebook size={20} />
               </a>
-              <a href="https://twitter.com" className="text-black me-2">
+              <a href="https://twitter.com" className="social-icon me-2">
                 <FaTwitter size={20} />
               </a>
-              <a href="https://instagram.com" className="text-black me-2">
+              <a href="https://instagram.com" className="social-icon me-2">
                 <FaInstagram size={20} />
               </a>
-              <a href="https://linkedin.com" className="text-black me-2">
+              <a href="https://linkedin.com" className="social-icon me-2">
                 <FaLinkedin size={20} />
               </a>
             </div>
