@@ -21,7 +21,9 @@ import OurProject from './components/Innerpages/OurProject';
 import OurTeam from './components/Innerpages/OurTeam';
 import OurWork from './components/Innerpages/OurWork';
 import MainNavbar from './components/topnav/MainNavbar';
-
+import InnerDashBoard from './components/dashboard/InnerDashBoard';
+import LeftNav from './components/dashboard/LeftNav';
+import "../src/components/custom/custom.css";
 
 
 
@@ -30,12 +32,12 @@ function App() {
 
   // Paths where NavBar should be hidden
   const hiddenPaths = new Set([
-    "/EmpDashBoard",
+    "/InnerDashBoard",
   ]);
 
   // Paths where Footer should be hidden
   const hiddenFooter1 = new Set([
-    "/",
+    "/Footer",
   ]);
 
   const shouldHideMainNavbar = hiddenPaths.has(location.pathname);
@@ -56,11 +58,11 @@ function App() {
              <Route path="/OurProject" element={<OurProject/>} />
               <Route path="/OurTeam" element={<OurTeam/>} />
               <Route path="/OurWork" element={<OurWork/>} />
-          
-
-
+              <Route path="/LeftNav" element={<LeftNav/>} />
+              <Route path="/InnerDashBoard" element={<InnerDashBoard/>} />
+        
       </Routes>
-      {!shouldHideFooter1 && <Footer />}
+      {!shouldHideFooter1}
     </>
 
   );

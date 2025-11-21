@@ -11,10 +11,15 @@
     -webkit-tap-highlight-color: transparent;
     backgroubr-color: var(--br-blue-light-bg);
   } */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-family: "Roboto Slab", serif;
+@font-face {
+  font-family: 'Poppins';
 }
+
+body {
+  color: var(--text-dark);
+  font-family: "Poppins", sans-serif !important;
+}
+
 
 /* svg {
       fill: #0d77cb;
@@ -77,9 +82,6 @@ body {
   --text-light: #757575;
 }
 
-body {
-  color: var(--text-dark);
-}
 
 .bg-dark {
   background-color: #fff !important;
@@ -100,9 +102,10 @@ body {
 
 .nav-link {
   font-weight: 500;
-  margin: 0 10px;
+  margin: 0 2px;
   transition: all 0.3s ease;
 }
+
 
 .nav-link:hover {
   color: #28a745 !important;
@@ -138,15 +141,15 @@ body {
 }
 
 .hero-section {
-  
+
   color: white;
   text-align: center;
   padding: 50px 0;
 }
 
-.pt-logo{
+.pt-logo {
   max-width: 74px;
-  height:auto;
+  height: auto;
 }
 
 .hero-title {
@@ -260,6 +263,7 @@ body {
   font-size: 1.1rem;
   margin-bottom: 20px;
 }
+
 
 .testimonial-name {
   font-weight: bold;
