@@ -138,12 +138,15 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-  background-size: cover;
-  background-position: center;
+  
   color: white;
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.pt-logo{
+  max-width: 74px;
+  height:auto;
 }
 
 .hero-title {

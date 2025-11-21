@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button, Row, Col, Card, Form, Carousel, Dropdown, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-scroll';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaUserCircle } from 'react-icons/fa';
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CarouselImage from '../Carousel/CarouselImage';
+
+
+
 
 const Home = () => {
   // State for donation form
@@ -97,109 +101,14 @@ const Home = () => {
   return (
     <div>
       {/* Navbar */}
-      <Navbar expand="lg" fixed="top" className="custom-navbar bg-dark">
-        <Container>
-          <Navbar.Brand href="#home" className="brand-logo text-black fw-bold">
-            SankalpTaru
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto align-items-center">
-              <Link to="home" spy={true} smooth={true} duration={500} className="nav-link text-black">
-                Home
-              </Link>
-              <Link to="about" spy={true} smooth={true} duration={500} className="nav-link text-black">
-                About Us
-              </Link>
-
-              {/* Projects with Submenu */}
-              <NavDropdown title="Projects" id="projects-nav-dropdown" className="text-black">
-                <NavDropdown.Item as={Link} to="projects" spy={true} smooth={true} duration={500}>
-                  All Projects
-                </NavDropdown.Item>
-                {projectsData.map((project) => (
-                  <NavDropdown.Item
-                    as={Link}
-                    to={project.id}
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    key={project.id}
-                  >
-                    {project.title}
-                  </NavDropdown.Item>
-                ))}
-              </NavDropdown>
-
-              <Link to="testimonials" spy={true} smooth={true} duration={500} className="nav-link text-black">
-                Testimonials
-              </Link>
-              <Link to="donate" spy={true} smooth={true} duration={500} className="nav-link text-black">
-                Donate
-              </Link>
-
-              {/* Social Media Icons */}
-              <div className="d-flex align-items-center ms-3">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-black me-3 social-icon">
-                  <FaFacebook size={20} />
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-black me-3 social-icon">
-                  <FaTwitter size={20} />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black me-3 social-icon">
-                  <FaInstagram size={20} />
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-black me-4 social-icon">
-                  <FaLinkedin size={20} />
-                </a>
-
-                {/* User Profile Dropdown */}
-                <Dropdown>
-                  <Dropdown.Toggle variant="link" id="user-dropdown" className="text-black p-0 user-dropdown">
-                    <FaUserCircle size={28} />
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu align="end">
-                    <Dropdown.Item href="#/profile">My Profile</Dropdown.Item>
-                    <Dropdown.Item href="#/donations">My Donations</Dropdown.Item>
-                    <Dropdown.Item href="#/settings">Settings</Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Item href="#/logout">Logout</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </div>
-
-              <Button variant="outline-light" className="ms-3 donate-btn">
-                Donate Now
-              </Button>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+   
 
       {/* Hero Section */}
       <section id="home" className="hero-section">
-        <Container>
-          <Row className="align-items-center min-vh-100">
-            <Col lg={12} className="hero-content">
-              <h1 className="hero-title">Plant a Tree, Grow a Future</h1>
-              <p className="hero-subtitle">
-                Join us in our mission to create a greener planet by planting trees
-                and supporting sustainable environmental initiatives.
-              </p>
-              <div className="hero-buttons">
-                <Link to="donate" spy={true} smooth={true} duration={500}>
-                  <Button variant="success" className="me-3 donate-btn-lg">
-                    Donate Now
-                  </Button>
-                </Link>
-                <Link to="about" spy={true} smooth={true} duration={500}>
-                  <Button variant="outline-light" className="learn-more-btn">
-                    Learn More
-                  </Button>
-                </Link>
-              </div>
-            </Col>
-          </Row>
+        <Container fluid className='p-0'>
+         
+            <CarouselImage/>
+          
         </Container>
       </section>
 
@@ -415,60 +324,7 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* Footer */}
-      <footer className="footer-section py-4">
-        <Container>
-          <Row>
-            <Col md={4} className="mb-4 mb-md-0">
-              <h5 className="footer-logo">SankalpTaru</h5>
-              <p>
-                Creating a greener planet through tree plantation and sustainable environmental initiatives.
-              </p>
-              <div className="social-icons">
-                <a href="#"><i className="bi bi-facebook"></i></a>
-                <a href="#"><i className="bi bi-twitter"></i></a>
-                <a href="#"><i className="bi bi-instagram"></i></a>
-                <a href="#"><i className="bi bi-linkedin"></i></a>
-              </div>
-            </Col>
-            <Col md={2} className="mb-4 mb-md-0">
-              <h6>Quick Links</h6>
-              <Nav className="flex-column">
-                <Link to="home" spy={true} smooth={true} duration={500} className="nav-link footer-link">Home</Link>
-                <Link to="about" spy={true} smooth={true} duration={500} className="nav-link footer-link">About Us</Link>
-                <Link to="projects" spy={true} smooth={true} duration={500} className="nav-link footer-link">Projects</Link>
-                <Link to="donate" spy={true} smooth={true} duration={500} className="nav-link footer-link">Donate</Link>
-              </Nav>
-            </Col>
-            <Col md={3} className="mb-4 mb-md-0">
-              <h6>Contact Us</h6>
-              <p>
-                123 Green Street, Eco City<br />
-                Mumbai, Maharashtra 400001<br />
-                India<br />
-                Email: info@sankalptaru.org<br />
-                Phone: +91 12345 67890
-              </p>
-            </Col>
-            <Col md={3}>
-              <h6>Subscribe to Newsletter</h6>
-              <p>Stay updated with our latest projects and initiatives.</p>
-              <div className="input-group">
-                <input type="text" className="form-control" placeholder="Your email" />
-                <button className="btn btn-success" type="button">Subscribe</button>
-              </div>
-            </Col>
-          </Row>
-          <hr className="my-4" style={{ borderColor: 'rgba(255,255,255,0.2)' }} />
-          <Row>
-            <Col className="text-center">
-              <p className="copyright">
-                &copy; {new Date().getFullYear()} SankalpTaru. All Rights Reserved.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </footer>
+    
 
       {/* Custom CSS */}
 

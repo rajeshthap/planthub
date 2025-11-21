@@ -10,8 +10,17 @@ import "../src/components/custom/style.css";
 
 
 import Home from '../src/components/pages/Home';
+import CarouselImage from './components/Carousel/CarouselImage';
 import Footer from '../src/components/footer/Footer'
-import NavBar from '../src/components/topnav/Navbar'
+import ContactUs from './components/Innerpages/ContactUs';
+import Donation from './components/Innerpages/Donation';
+import Gallery from './components/Innerpages/Gallery';
+import MissionVision from './components/Innerpages/MissionVision';
+import Organization from './components/Innerpages/Organization';
+import OurProject from './components/Innerpages/OurProject';
+import OurTeam from './components/Innerpages/OurTeam';
+import OurWork from './components/Innerpages/OurWork';
+import MainNavbar from './components/topnav/MainNavbar';
 
 
 
@@ -29,15 +38,25 @@ function App() {
     "/",
   ]);
 
-  const shouldHideNavbar = hiddenPaths.has(location.pathname);
+  const shouldHideMainNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
   return (
 
     <>
-      {!shouldHideNavbar && <NavBar />}
+      {!shouldHideMainNavbar && <MainNavbar />}
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/CarouselImage" element={<CarouselImage />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
+         <Route path="/Donation" element={<Donation/>} />
+          <Route path="/Gallery" element={<Gallery/>} />
+          <Route path="/MissionVision" element={<MissionVision/>} />
+           <Route path="/Organization" element={<Organization/>} />
+             <Route path="/OurProject" element={<OurProject/>} />
+              <Route path="/OurTeam" element={<OurTeam/>} />
+              <Route path="/OurWork" element={<OurWork/>} />
+          
 
 
       </Routes>
