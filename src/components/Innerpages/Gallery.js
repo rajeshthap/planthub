@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../assets/css/Innerpages.css";
-
+import Footer from "../footer/Footer";
 import Plant1 from "../../assets/images/Plant1.jpg";
 import Plant2 from "../../assets/images/Plant2.jpg";
 import Plant3 from "../../assets/images/Plant3.jpg";
@@ -24,51 +24,55 @@ import { Container } from "react-bootstrap";
 
 
 const Gallery = () => {
-const [activeTab, setActiveTab] = useState("plantation");
+  const [activeTab, setActiveTab] = useState("plantation");
 
 
-const tabs = [
-{ id: "plantation", label: "Plantation" },
-{ id: "agriculture", label: "Agriculture" },
-{ id: "events", label: "Events" }
-];
+  const tabs = [
+    { id: "plantation", label: "Plantation" },
+    { id: "agriculture", label: "Agriculture" },
+    { id: "events", label: "Events" }
+  ];
 
 
-const images = {plantation: [Plant1, Plant2,Plant3,Plant4,Plant5,Plant6,Plant7],
-agriculture: [Plant8,Plant9,Plant10,Plant11,Plant12,Plant13],
-events: [Plant14,Plant15,Plant16,Plant17,Plant18]
-};
+  const images = {
+    plantation: [Plant1, Plant2, Plant3, Plant4, Plant5, Plant6, Plant7],
+    agriculture: [Plant8, Plant9, Plant10, Plant11, Plant12, Plant13],
+    events: [Plant14, Plant15, Plant16, Plant17, Plant18]
+  };
 
 
-return (
-  <Container className="py-4 mt-2 pt-container">
-<div className="gallery-container pt-gallery">
-<h2 className="gallery-title">Plantation & Agricultural Gallery</h2>
+  return (
+    <>
+      <Container className="py-4 mt-2 pt-container">
+        <div className="gallery-container pt-gallery">
+          <h2 className="gallery-title">Plantation & Agricultural Gallery</h2>
 
 
-<div className="tabs-container">
-{tabs.map((tab) => (
-<button
-key={tab.id}
-className={`tab-button ${activeTab === tab.id ? "active-tab" : ""}`}
-onClick={() => setActiveTab(tab.id)}
->
-{tab.label}
-</button>
-))}
-</div>
+          <div className="tabs-container">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                className={`tab-button ${activeTab === tab.id ? "active-tab" : ""}`}
+                onClick={() => setActiveTab(tab.id)}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
 
 
-<div className="gallery-grid">
-{images[activeTab].map((src, index) => (
-<div key={index} className="gallery-card">
-<img src={src} alt={`${activeTab} ${index + 1}`} className="gallery-image" />
-</div>
-))}
-</div>
-</div>
-</Container>
-);
+          <div className="gallery-grid">
+            {images[activeTab].map((src, index) => (
+              <div key={index} className="gallery-card">
+                <img src={src} alt={`${activeTab} ${index + 1}`} className="gallery-image" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
+      <Footer />
+    </>
+  );
 };
 
 

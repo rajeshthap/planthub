@@ -5,14 +5,15 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div>
-        {/* Footer */}
+      {/* Footer */}
       <footer className="footer-section py-4">
         <Container>
           <Row>
             <Col md={4} className="mb-4 mb-md-0">
-              <h5 className="footer-logo">SankalpTaru</h5>
+              <h5 className="footer-logo">Youth For Himalayas Trust
+              </h5>
               <p>
-                Creating a greener planet through tree plantation and sustainable environmental initiatives.
+                Uttarakhand, India
               </p>
               <div className="social-icons">
                 <a href="#"><i className="bi bi-facebook"></i></a>
@@ -34,9 +35,9 @@ function Footer() {
               <h6>Contact Us</h6>
               <p>
                 123 Green Street, Eco City<br />
-                Mumbai, Maharashtra 400001<br />
+                Dehradun, Uttarakhand 400001<br />
                 India<br />
-                Email: info@sankalptaru.org<br />
+                Email: info@HimalayasTrust.org<br />
                 Phone: +91 12345 67890
               </p>
             </Col>
@@ -53,7 +54,7 @@ function Footer() {
           <Row>
             <Col className="text-center">
               <p className="copyright">
-                &copy; {new Date().getFullYear()} SankalpTaru. All Rights Reserved.
+                &copy; {new Date().getFullYear()} Youth For Himalayas Trust. All Rights Reserved.
               </p>
             </Col>
           </Row>

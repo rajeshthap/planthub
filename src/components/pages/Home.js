@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button, Row, Col, Card, Form, Carousel, Dropdown, NavDropdown } from 'react-bootstrap';
-
+import Footer from "../footer/Footer";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CarouselImage from '../Carousel/CarouselImage';
@@ -78,64 +78,64 @@ const Home = () => {
       title: ' Adopt-a-Plant Initiative',
       description: 'Encouraging individuals, families, and students to adopt a sapling and take responsibility for its growth.',
       image: PlantI,
-      alt:"PlantI"
+      alt: "PlantI"
     },
     {
       id: 'urban-greening',
       title: 'Community Forest Protection Program',
       description: 'Working with local communities to protect existing forests from cutting, grazing, and fire hazards.',
       image: Forest,
-      alt:"Forest"
+      alt: "Forest"
     },
-     {
+    {
       id: 'urban-greening',
       title: ' Himalayan Biodiversity Restoration',
       description: 'Planting native species to support local wildlife, prevent soil erosion, and strengthen the ecosystem.',
       image: HimalayaB,
-      alt:"HimalayaB"
+      alt: "HimalayaB"
     },
-     {
+    {
       id: 'urban-greening',
       title: 'Plastic-Free Himalayas Mission',
       description: 'Conducting clean-up drives and awareness programs to reduce pollution in forest and trekking areas.',
       image: Plastic,
-       alt:"Plastic"
+      alt: "Plastic"
     },
-     {
+    {
       id: 'urban-greening',
       title: ' Climate Awareness & Youth Workshops',
       description: 'Educating school and college students about climate change, tree conservation, and sustainable living.',
       image: Climate,
-      alt:"Climate"
+      alt: "Climate"
 
     },
-     {
+    {
       id: 'urban-greening',
       title: ' Water & Soil Conservation Projects',
       description: 'Building check dams, preventing landslides, and promoting rainwater harvesting to protect the environment.',
       image: Water,
-      alt:"Water"
+      alt: "Water"
     },
-     {
+    {
       id: 'urban-greening',
       title: ' Sacred Tree Protection Program',
       description: 'Identifying and preserving old and culturally significant trees in Himalayan communities.',
       image: Sacred,
-      alt:"Sacred"
+      alt: "Sacred"
     },
-     {
+    {
       id: 'urban-greening',
       title: '  Urban Green Corners Initiative',
       description: 'Creating small forests, herbal gardens, and green corners in towns and public spaces.',
       image: Urban,
-      alt:"urban"
+      alt: "urban"
     },
-     {
+    {
       id: 'urban-greening',
       title: ' Tree Health & Care Program',
       description: 'Regular maintenance of planted saplings, including watering, mulching, fencing, and monitoring.',
       image: Treehealth,
-      alt:"Treehealth"
+      alt: "Treehealth"
     }
   ];
 
@@ -162,234 +162,97 @@ const Home = () => {
   ];
 
   return (
-    <div>
-      {/* Navbar */}
+    <>
+      <div>
+        {/* Navbar */}
 
 
-      {/* Hero Section */}
-      <section id="home" className="hero-section">
-        <Container fluid className='p-0'>
+        {/* Hero Section */}
+        <section id="home" className="hero-section">
+          <Container fluid className='p-0'>
 
-          <CarouselImage />
+            <CarouselImage />
 
-        </Container>
-      </section>
+          </Container>
+        </section>
 
-      {/* About Section */}
-      <section id="about" className="py-5">
-        <Container>
-          <Row className="align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0">
-              <img
-                src={Forest}
-                alt="Planting trees"
-                className="img-fluid rounded about-image"
-              />
-            </Col>
-            <Col lg={6}>
-              <h2 className="section-title">About Us –Youth for Himalayas Trust</h2>
-              <p className="section-subtitle">
-                Youth for Himalayas Trust is a dedicated environmental initiative committed to protecting, nurturing, and restoring the natural heritage of the Himalayan region. We believe that every plant, tree, and ecosystem plays a vital role in preserving the fragile balance of our mountains.
-              </p>
-              <p>
-                Our mission is simple yet powerful — <b>to inspire youth and local communities to take responsibility for nature</b>, beginning with small but impactful actions like planting and caring for saplings. Each plant we nurture represents our promise to safeguard the Himalayas for future generations.
-                Through awareness programs, community participation, plantation drives, and sustainable development activities, the Trust works tirelessly to promote ecological conservation.
-              </p>
-              <p>
-                With the energy of the youth and the wisdom of the mountains, we aim to create a greener, healthier, and more resilient Himalayan environment.
-                Join us in our journey as we protect nature, one plant at a time.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* Stats Section */}
-      <section className="stats-section py-5">
-        <Container>
-          <Row>
-            {statsData.map((stat, index) => (
-              <Col md={6} lg={3} className="mb-4 mb-lg-0" key={index}>
-                <div className="stat-box text-center">
-                  <h3 className="stat-number">{stat.number}</h3>
-                  <p className="stat-label">{stat.label}</p>
-                </div>
+        {/* About Section */}
+        <section id="about" className="py-5">
+          <Container>
+            <Row className="align-items-center">
+              <Col lg={6} className="mb-4 mb-lg-0">
+                <img
+                  src={Forest}
+                  alt="Planting trees"
+                  className="img-fluid rounded about-image"
+                />
               </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="py-5">
-        <Container>
-          <h2 className="section-title text-center mb-5">Our Projects</h2>
-          <Row>
-            {projectsData.map((project, index) => (
-              <Col md={4} className="mb-4" key={index}>
-                <Card className="project-card h-100" id={project.id}>
-                  <Card.Img variant="top" src={project.image} />
-                  <Card.Body>
-                    <Card.Title>{project.title}</Card.Title>
-                    <Card.Text>{project.description}</Card.Text>
-                  </Card.Body>
-                  <Card.Footer className="bg-white border-0">
-                    <Button variant="outline-success">Learn More</Button>
-                  </Card.Footer>
-                </Card>
+              <Col lg={6}>
+                <h2 className="section-title">About Us –Youth for Himalayas Trust</h2>
+                <p className="section-subtitle">
+                  Youth for Himalayas Trust is a dedicated environmental initiative committed to protecting, nurturing, and restoring the natural heritage of the Himalayan region. We believe that every plant, tree, and ecosystem plays a vital role in preserving the fragile balance of our mountains.
+                </p>
+                <p>
+                  Our mission is simple yet powerful — <b>to inspire youth and local communities to take responsibility for nature</b>, beginning with small but impactful actions like planting and caring for saplings. Each plant we nurture represents our promise to safeguard the Himalayas for future generations.
+                  Through awareness programs, community participation, plantation drives, and sustainable development activities, the Trust works tirelessly to promote ecological conservation.
+                </p>
+                <p>
+                  With the energy of the youth and the wisdom of the mountains, we aim to create a greener, healthier, and more resilient Himalayan environment.
+                  Join us in our journey as we protect nature, one plant at a time.
+                </p>
               </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
+            </Row>
+          </Container>
+        </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="testimonials-section py-5">
-        <Container>
-          <h2 className="section-title text-center mb-5">What People Say</h2>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <Carousel indicators={false} className="testimonial-carousel">
-                {testimonialsData.map((testimonial, index) => (
-                  <Carousel.Item key={index}>
-                    <Card className="testimonial-card">
-                      <Card.Body className="text-center">
-                        <Card.Img
-                          src={testimonial.image}
-                          className="testimonial-img mb-3"
-                          roundedCircle
-                        />
-                        <Card.Text className="testimonial-content">
-                          "{testimonial.content}"
-                        </Card.Text>
-                        <Card.Title className="testimonial-name">{testimonial.name}</Card.Title>
-                        <Card.Subtitle className="testimonial-role">{testimonial.role}</Card.Subtitle>
-                      </Card.Body>
-                    </Card>
-                  </Carousel.Item>
-                ))}
-              </Carousel>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+        {/* Stats Section */}
+        <section className="stats-section py-5">
+          <Container>
+            <Row>
+              {statsData.map((stat, index) => (
+                <Col md={6} lg={3} className="mb-4 mb-lg-0" key={index}>
+                  <div className="stat-box text-center">
+                    <h3 className="stat-number">{stat.number}</h3>
+                    <p className="stat-label">{stat.label}</p>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </Container>
+        </section>
 
-      {/* Donation Section */}
-      <section id="donate" className="py-5">
-        <Container>
-          <h2 className="section-title text-center mb-5">Make a Donation</h2>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <Card className="donation-card">
-                <Card.Body>
-                  <Form onSubmit={handleSubmit}>
-                    <Row>
-                      <Col md={6}>
-                        <Form.Group className="mb-4">
-                          <Form.Label>Select Donation Amount</Form.Label>
-                          <div className="donation-amounts">
-                            {[100, 250, 500, 1000, 2500].map((amount) => (
-                              <Button
-                                key={amount}
-                                variant={donationAmount === amount.toString() ? "success" : "outline-success"}
-                                onClick={() => handleAmountChange(amount.toString())}
-                              >
-                                ₹{amount}
-                              </Button>
-                            ))}
-                          </div>
-                          <Form.Control
-                            type="number"
-                            placeholder="Enter custom amount"
-                            value={customAmount}
-                            onChange={handleCustomAmountChange}
-                            className="mt-2"
-                          />
-                        </Form.Group>
-                      </Col>
-                      <Col md={6}>
-                        <Form.Group className="mb-4">
-                          <Form.Label>Donation Impact</Form.Label>
-                          <div className="donation-impact">
-                            <p>₹100 plants 1 tree</p>
-                            <p>₹500 plants 5 trees</p>
-                            <p>₹1000 plants 10 trees</p>
-                          </div>
-                        </Form.Group>
-                      </Col>
-                    </Row>
+        {/* Projects Section */}
+        <section id="projects" className="py-5">
+          <Container>
+            <h2 className="section-title text-center mb-5">Our Projects</h2>
+            <Row>
+              {projectsData.map((project, index) => (
+                <Col md={4} className="mb-4" key={index}>
+                  <Card className="project-card h-100" id={project.id}>
+                    <Card.Img variant="top" src={project.image} />
+                    <Card.Body>
+                      <Card.Title>{project.title}</Card.Title>
+                      <Card.Text>{project.description}</Card.Text>
+                    </Card.Body>
+                    <Card.Footer className="bg-white border-0">
+                      <Button variant="outline-success">Learn More</Button>
+                    </Card.Footer>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </Container>
+        </section>
 
-                    <h4 className="mb-3">Donor Information</h4>
-                    <Row>
-                      <Col md={6}>
-                        <Form.Group className="mb-3">
-                          <Form.Label>Full Name</Form.Label>
-                          <Form.Control
-                            type="text"
-                            name="name"
-                            value={donorInfo.name}
-                            onChange={handleInputChange}
-                            required
-                          />
-                        </Form.Group>
-                      </Col>
-                      <Col md={6}>
-                        <Form.Group className="mb-3">
-                          <Form.Label>Email Address</Form.Label>
-                          <Form.Control
-                            type="email"
-                            name="email"
-                            value={donorInfo.email}
-                            onChange={handleInputChange}
-                            required
-                          />
-                        </Form.Group>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col md={6}>
-                        <Form.Group className="mb-3">
-                          <Form.Label>Phone Number</Form.Label>
-                          <Form.Control
-                            type="tel"
-                            name="phone"
-                            value={donorInfo.phone}
-                            onChange={handleInputChange}
-                            required
-                          />
-                        </Form.Group>
-                      </Col>
-                      <Col md={6}>
-                        <Form.Group className="mb-3">
-                          <Form.Label>PAN Number (for tax benefits)</Form.Label>
-                          <Form.Control
-                            type="text"
-                            name="pan"
-                            value={donorInfo.pan}
-                            onChange={handleInputChange}
-                          />
-                        </Form.Group>
-                      </Col>
-                    </Row>
-
-                    <div className="text-center mt-4">
-                      <Button variant="success" type="submit" size="lg" className="donate-btn-lg">
-                        Donate Now
-                      </Button>
-                    </div>
-                  </Form>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+        {/* Testimonials Section */}
 
 
 
-      {/* Custom CSS */}
+        {/* Custom CSS */}
 
-    </div>
+      </div>
+      <Footer />
+    </>
   );
 };
 
