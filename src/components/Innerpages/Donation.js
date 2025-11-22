@@ -3,13 +3,14 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import axios from "axios";
 import "../../assets/css/Innerpages.css";
 import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
 const Donation = () => {
   const [data, setData] = useState({
     name: "",
     email: "",
     phone: "",
     amount: "",
-    password: "",
+
   });
 
   const [errors, setErrors] = useState({});
@@ -35,9 +36,7 @@ const Donation = () => {
     else if (isNaN(data.amount) || data.amount <= 0)
       temp.amount = "Enter a valid amount";
 
-    if (!data.password) temp.password = "Password is required";
-    else if (data.password.length < 6)
-      temp.password = "Password must be at least 6 characters";
+
 
     setErrors(temp);
     return Object.keys(temp).length === 0;
@@ -82,6 +81,36 @@ const Donation = () => {
 
   return (
     <>
+     <div className="company-banner-contact">
+              <div className="site-breadcrumb-wpr">
+                <h2 className="breadcrumb-title">Donation</h2>
+            
+                <ul className="breadcrumb-menu clearfix" type="none">
+                  <li>
+                    <Link to="/" className="breadcrumb-link">Home</Link>
+                  </li>
+            
+                  <li className="px-2">/</li>
+            
+                  <li>Donation</li>
+                </ul>
+              </div>
+            </div>
+     <div className="company-banner-donation">
+      <div className="site-breadcrumb-wpr">
+        <h2 className="breadcrumb-title">Donation</h2>
+    
+        <ul className="breadcrumb-menu clearfix" type="none">
+          <li>
+            <Link to="/" className="breadcrumb-link">Home</Link>
+          </li>
+    
+          <li className="px-2">/</li>
+    
+          <li>Donation</li>
+        </ul>
+      </div>
+    </div>
       <Container className="py-4 mt-4 pt-container">
         {successMsg && (
           <div className="alert alert-success">{successMsg}</div>
@@ -170,23 +199,7 @@ const Donation = () => {
                   </Form.Group>
                 </Col>
 
-                {/* PASSWORD */}
-                <Col lg={6} md={6}>
-                  <Form.Group className="mb-3">
-                    <Form.Label className="br-label">Password</Form.Label>
-                    <Form.Control
-                      type="password"
-                      className={`br-form-control ${errors.password ? "is-invalid" : ""
-                        }`}
-                      name="password"
-                      value={data.password}
-                      onChange={handleChange}
-                    />
-                    {errors.password && (
-                      <div className="invalid-feedback">{errors.password}</div>
-                    )}
-                  </Form.Group>
-                </Col>
+             
               </Row>
 
               <Button type="submit" className="btn btn-primary btn-sm">

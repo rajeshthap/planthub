@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import axios from "axios";
 import "../../assets/css/Innerpages.css";
 import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
 const ContactUs = () => {
   const [data, setData] = useState({
     first_name: "",
@@ -94,6 +95,21 @@ const ContactUs = () => {
 
   return (
     <>
+      <div className="company-banner-contact">
+  <div className="site-breadcrumb-wpr">
+    <h2 className="breadcrumb-title">Contact</h2>
+
+    <ul className="breadcrumb-menu clearfix" type="none">
+      <li>
+        <Link to="/" className="breadcrumb-link">Home</Link>
+      </li>
+
+      <li className="px-2">/</li>
+
+      <li>Contact</li>
+    </ul>
+  </div>
+</div>
       <Container className="py-4 mt-4 pt-container">
 
         {successMsg && (

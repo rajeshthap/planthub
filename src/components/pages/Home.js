@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Container, Button, Row, Col, Card, Form, Carousel, Dropdown, NavDropdown } from 'react-bootstrap';
+import { Container, Button, Row, Col, Card} from 'react-bootstrap';
 import Footer from "../footer/Footer";
 
 import 'bootstrap/dist/css/bootstrap.min.css';

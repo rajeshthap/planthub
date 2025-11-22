@@ -20,6 +20,7 @@ import Plant16 from "../../assets/images/Plant16.jpg";
 import Plant17 from "../../assets/images/Plant17.jpg";
 import Plant18 from "../../assets/images/Plant18.webp";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 
@@ -43,6 +44,21 @@ const Gallery = () => {
 
   return (
     <>
+     <div className="company-banner">
+          <div className="site-breadcrumb-wpr">
+            <h2 className="breadcrumb-title">Gallery</h2>
+        
+            <ul className="breadcrumb-menu clearfix" type="none">
+              <li>
+                <Link to="/" className="breadcrumb-link">Home</Link>
+              </li>
+        
+              <li className="px-2">/</li>
+        
+              <li>Gallery</li>
+            </ul>
+          </div>
+        </div>
       <Container className="py-4 mt-2 pt-container">
         <div className="gallery-container pt-gallery">
           <h2 className="gallery-title">Plantation & Agricultural Gallery</h2>

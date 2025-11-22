@@ -24,15 +24,46 @@
 .breadcrumb-link {
   text-decoration: none;
   color: #000; /* your color */
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .breadcrumb-link:hover {
   color: rgb(28, 84, 28); /* hover color */
 }
-
+.mission-img{
+    border-radius: 12px;
+}
 .company-banner {
   background-image: url('../../assets/images/Plant3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px;
+}
+
+.company-banner-mission {
+  background-image: url('../../assets/images/Plant1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px;
+}
+.company-banner-org {
+  background-image: url('../../assets/images/banner5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px;
+}
+.company-banner-donation {
+  background-image: url('../../assets/images/banner4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px;
+}
+.company-banner-contact{
+ background-image: url('../../assets/images/banner5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

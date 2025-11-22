@@ -12,6 +12,8 @@ import Vijay from "../../assets/images/vijay.png";
 import Parshant from "../../assets/images/surendra1.png";
 import surendra2 from "../../assets/images/surendra2.png";
 import Footer from "../footer/Footer";
+import "../../assets/css/Mission.css"
+import { Link } from "react-router-dom";
 
 function OurTeam() {
   const team = [
@@ -45,6 +47,21 @@ function OurTeam() {
 
   return (
  <>
+    <div className="company-banner-mission">
+  <div className="site-breadcrumb-wpr">
+    <h2 className="breadcrumb-title">Our Team</h2>
+
+    <ul className="breadcrumb-menu clearfix" type="none">
+      <li>
+        <Link to="/" className="breadcrumb-link">Home</Link>
+      </li>
+
+      <li className="px-2">/</li>
+
+      <li>Our Team</li>
+    </ul>
+  </div>
+</div>
       <Container className='py-4 mt-4 pt-container'>
       <Row className=' shadow p-4 rounded bg-white pt-contact-team '>
  

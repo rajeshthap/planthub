@@ -1,10 +1,26 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import Footer from "../footer/Footer";
-
+import { Link } from 'react-router-dom';
+import "../../assets/css/Mission.css"
 const Organization = () => {
   return (
     <>
+       <div className="company-banner-org">
+      <div className="site-breadcrumb-wpr">
+        <h2 className="breadcrumb-title">Organization</h2>
+    
+        <ul className="breadcrumb-menu clearfix" type="none">
+          <li>
+            <Link to="/" className="breadcrumb-link">Home</Link>
+          </li>
+    
+          <li className="px-2">/</li>
+    
+          <li>Organization</li>
+        </ul>
+      </div>
+    </div>
       <Container className='py-4 mt-4 pt-container'>
         <Row className=' shadow p-4 rounded bg-white pt-contact '>
 
