@@ -34,10 +34,11 @@ function Footer() {
             <Col md={3} className="mb-4 mb-md-0">
               <h6>Contact Us</h6>
               <p>
-                123 Green Street, Eco City<br />
-                Dehradun, Uttarakhand 400001<br />
-                India<br />
-                Email: info@HimalayasTrust.org<br />
+                Youth For Himalayas Trust
+                <br />
+                Uttarakhand, India<br />
+
+                Email: info@youthforhimalayastrust.org<br />
                 Phone: +91 12345 67890
               </p>
             </Col>

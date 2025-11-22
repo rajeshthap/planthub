@@ -1,4 +1,3 @@
-
 .ourteam-section {
   background-color: #f8f9fa;
   /* light gray background */
@@ -21,18 +20,23 @@
   margin-bottom: 16px;
   font-weight: 600;
 }
+
 .breadcrumb-link {
   text-decoration: none;
-  color: #000; /* your color */
+  color: #71c535;
+  /* your color */
   font-weight: 800;
 }
 
 .breadcrumb-link:hover {
-  color: rgb(28, 84, 28); /* hover color */
+  color: rgb(28, 84, 28);
+  /* hover color */
 }
-.mission-img{
-    border-radius: 12px;
+
+.mission-img {
+  border-radius: 12px;
 }
+
 .company-banner {
   background-image: url('../../assets/images/Plant3.jpg');
   background-size: cover;
@@ -48,6 +52,7 @@
   background-repeat: no-repeat;
   padding: 60px;
 }
+
 .company-banner-org {
   background-image: url('../../assets/images/banner5.jpg');
   background-size: cover;
@@ -55,6 +60,7 @@
   background-repeat: no-repeat;
   padding: 60px;
 }
+
 .company-banner-donation {
   background-image: url('../../assets/images/banner4.jpg');
   background-size: cover;
@@ -62,8 +68,9 @@
   background-repeat: no-repeat;
   padding: 60px;
 }
-.company-banner-contact{
- background-image: url('../../assets/images/banner6.jpg');
+
+.company-banner-contact {
+  background-image: url('../../assets/images/banner6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,7 +166,8 @@
 .pt-con h3 {
   font-size: 26px;
   font-weight: 700;
-  color: green; /* Elegant dark blue */
+  color: green;
+  /* Elegant dark blue */
   margin-bottom: 20px;
 }
 
