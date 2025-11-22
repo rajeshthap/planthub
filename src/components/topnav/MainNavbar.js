@@ -71,7 +71,7 @@ function MainNavbar() {
                 <FaLinkedin size={20} />
               </a>
             </div>
-            <Link to="/InnerDashBoard" className="nav-link text-black pt-login">
+            <Link to="/Login" className="nav-link text-black pt-login">
               Login
             </Link>
           </Nav>

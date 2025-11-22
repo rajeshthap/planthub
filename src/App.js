@@ -25,6 +25,7 @@ import InnerDashBoard from './components/dashboard/InnerDashBoard';
 import LeftNav from './components/dashboard/LeftNav';
 import "../src/components/custom/custom.css";
 import DonateDashBoard from './components/dashboard/DonateDashBoard';
+import Login from './components/all_login/Login';
 
 
 
@@ -63,6 +64,7 @@ function App() {
               <Route path="/LeftNav" element={<LeftNav/>} />
               <Route path="/InnerDashBoard" element={<InnerDashBoard/>} />
               <Route path="/DonateDashBoard" element={<DonateDashBoard/>} />
+              <Route path="/Login" element={<Login/>} />
         
       </Routes>
       {!shouldHideFooter1}

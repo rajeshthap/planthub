@@ -1,0 +1,101 @@
+/* Page wrapper */
+.pt-container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login container layout */
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Login Box Styling */
+.login-box {
+  width: 100%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.login-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Label */
+.login-box label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #2563eb;
+}
+
+/* Login button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-box button:hover {
+  background: #1d4ed8;
+}
+
+/* Message */
+.login-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-box {
+    padding: 18px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+}
