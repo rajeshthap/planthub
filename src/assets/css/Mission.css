@@ -186,3 +186,11 @@
 .pt-con br {
   margin-bottom: 5px;
 }
+.our-team-heading h1{
+    font-size: 18px;
+    color: black;
+}
+.our-team-heading p{
+    font-size: 14px;
+    color: black;
+}
