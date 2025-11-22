@@ -570,7 +570,9 @@ border: none !important;
         transform: translateX(0);
         display: flex !important;
     }
-
+.pt-donate-view{
+    font-size: 10px;
+}
     /* Override sidebar-closed on mobile */
     .sidebar-closed {
         width: 260px;
