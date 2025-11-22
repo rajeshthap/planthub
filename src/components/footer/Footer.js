@@ -39,7 +39,7 @@ function Footer() {
                 Uttarakhand, India<br />
 
                 Email: info@youthforhimalayastrust.org<br />
-                Phone: +91 12345 67890
+                Phone: +91 63998 00158
               </p>
             </Col>
             <Col md={3}>

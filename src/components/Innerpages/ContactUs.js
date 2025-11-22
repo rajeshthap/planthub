@@ -227,7 +227,7 @@ const ContactUs = () => {
 
               <p><strong>Email:</strong><br /> info@youthforhimalayastrust.org</p>
 
-              <p><strong>Phone:</strong><br /> +91 9876543210</p>
+              <p><strong>Phone:</strong><br /> +91 63998 00158</p>
 
               <p><strong>Working Hours:</strong><br /> Mon – Sat, 9:00 AM – 6:00 PM</p>
             </div>

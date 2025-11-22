@@ -81,22 +81,22 @@ const Donation = () => {
 
   return (
     <>
-   
-     <div className="company-banner-donation">
-      <div className="site-breadcrumb-wpr">
-        <h2 className="breadcrumb-title">Donation</h2>
-    
-        <ul className="breadcrumb-menu clearfix" type="none">
-          <li>
-            <Link to="/" className="breadcrumb-link">Home</Link>
-          </li>
-    
-          <li className="px-2">/</li>
-    
-          <li>Donation</li>
-        </ul>
+
+      <div className="company-banner-donation">
+        <div className="site-breadcrumb-wpr">
+          <h2 className="breadcrumb-title">Donation</h2>
+
+          <ul className="breadcrumb-menu clearfix" type="none">
+            <li>
+              <Link to="/" className="breadcrumb-link">Home</Link>
+            </li>
+
+            <li className="px-2">/</li>
+
+            <li>Donation</li>
+          </ul>
+        </div>
       </div>
-    </div>
       <Container className="py-4 mt-4 pt-container">
         {successMsg && (
           <div className="alert alert-success">{successMsg}</div>
@@ -185,7 +185,7 @@ const Donation = () => {
                   </Form.Group>
                 </Col>
 
-             
+
               </Row>
 
               <Button type="submit" className="btn btn-primary btn-donat-submit btn-sm">
@@ -206,7 +206,7 @@ const Donation = () => {
 
               <p>
                 <strong>Phone:</strong>
-                <br /> +91 9876543210
+                <br /> +91 63998 00158
               </p>
 
               <p>
