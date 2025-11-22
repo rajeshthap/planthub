@@ -79,7 +79,7 @@ const InnerDashBoard = () => {
         <Container fluid className="dashboard-body">
          <div className="br-box-container">
 
-            <Row className="mt-3">
+            <Row className="">
               <div className="col-md-12">
                <table className="temp-rwd-table">
   <tbody className="pt-table-th">

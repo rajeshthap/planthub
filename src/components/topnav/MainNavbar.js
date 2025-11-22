@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Navbar as BsNavbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar as BsNavbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png";
 import "../../assets/css/Navbar.css";

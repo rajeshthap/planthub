@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Nav, Offcanvas, Collapse } from "react-bootstrap";
 import {
-  FaTachometerAlt,
   FaSignOutAlt,
   FaChevronDown,
   FaChevronRight,
   FaChartLine,
  
 } from "react-icons/fa";
-
+import { RiDashboard3Line } from "react-icons/ri";
 import Logo from "../../assets/images/plant-logo.png";
 import "../../assets/css/LeftNav.css";
-import { Link, Navigate } from "react-router-dom";
-
-import { TbDeviceDesktopSearch } from "react-icons/tb";
-
-
+import { Link } from "react-router-dom";
+import { BiDonateBlood } from "react-icons/bi";
+import { MdContactPhone } from "react-icons/md";
 const LeftNav = ({ sidebarOpen, setSidebarOpen }) => {
    
 
@@ -43,19 +40,19 @@ useEffect(() => {
 
 const menuItems = [
     {
-      icon: <FaTachometerAlt />,
+      icon: <RiDashboard3Line />,
       label: "Dashboard",
       path: "/InnerDashBoard",
       active: true,
     },
   {
-      icon: <FaTachometerAlt />,
+      icon: <MdContactPhone />,
       label: "Contact Us",
       path: "/DonateDashBoard",
       active: true,
     },
     {
-      icon: <TbDeviceDesktopSearch />,
+      icon: <BiDonateBlood />,
       label: "Donate",
  
       submenu: [

@@ -365,8 +365,16 @@ h2 {
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
 }
+.btn-donat-submit{
+  background-color: #28a745;
+  border: none !important;
+  font-size: 12px;
+}
 @media (max-width: 576px) {
   .comp-name {
     font-size: 14px !important;
+  }
+  .pt-table-th tr th {
+    display: none !important;
   }
 }

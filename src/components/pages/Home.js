@@ -22,42 +22,15 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
 
-  // State for donation form
-  const [donationAmount, setDonationAmount] = useState('500');
-  const [customAmount, setCustomAmount] = useState('');
-  const [donorInfo, setDonorInfo] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    pan: ''
-  });
+  
 
-  // Handle donation amount change
-  const handleAmountChange = (amount) => {
-    setDonationAmount(amount);
-    setCustomAmount('');
-  };
 
-  // Handle custom amount change
-  const handleCustomAmountChange = (e) => {
-    setCustomAmount(e.target.value);
-    setDonationAmount('');
-  };
 
-  // Handle donor info change
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setDonorInfo({
-      ...donorInfo,
-      [name]: value
-    });
-  };
 
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thank you for your donation of ₹${donationAmount || customAmount}!`);
-  };
+
+ 
+
+ 
 
   // Stats data
   const statsData = [

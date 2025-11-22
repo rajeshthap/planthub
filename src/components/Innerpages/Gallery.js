@@ -59,8 +59,8 @@ const Gallery = () => {
             </ul>
           </div>
         </div>
-      <Container className="py-4 mt-2 pt-container">
-        <div className="gallery-container pt-gallery">
+      <Container className="py-4 pt-container">
+        <div className="gallery-container">
           <h2 className="gallery-title">Plantation & Agricultural Gallery</h2>
 
 

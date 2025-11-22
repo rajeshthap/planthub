@@ -25,10 +25,10 @@ function Footer() {
             <Col md={2} className="mb-4 mb-md-0">
               <h6>Quick Links</h6>
               <Nav className="flex-column">
-                <Link to="home" spy={true} smooth={true} duration={500} className="nav-link footer-link">Home</Link>
-                <Link to="about" spy={true} smooth={true} duration={500} className="nav-link footer-link">About Us</Link>
-                <Link to="projects" spy={true} smooth={true} duration={500} className="nav-link footer-link">Projects</Link>
-                <Link to="donate" spy={true} smooth={true} duration={500} className="nav-link footer-link">Donate</Link>
+                <Link to="/" spy={true} smooth={true} duration={500} className="nav-link footer-link">Home</Link>
+                <Link to="/OurTeam" spy={true} smooth={true} duration={500} className="nav-link footer-link">Our Team</Link>
+                <Link to="/MissionVision" spy={true} smooth={true} duration={500} className="nav-link footer-link">Mission & Vision</Link>
+                <Link to="/Donation" spy={true} smooth={true} duration={500} className="nav-link footer-link">Donate</Link>
               </Nav>
             </Col>
             <Col md={3} className="mb-4 mb-md-0">

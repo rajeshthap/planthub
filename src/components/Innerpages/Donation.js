@@ -188,7 +188,7 @@ const Donation = () => {
              
               </Row>
 
-              <Button type="submit" className="btn btn-primary btn-sm">
+              <Button type="submit" className="btn btn-primary btn-donat-submit btn-sm">
                 Donate Now
               </Button>
             </Form>
