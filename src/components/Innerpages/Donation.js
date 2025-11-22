@@ -81,21 +81,7 @@ const Donation = () => {
 
   return (
     <>
-     <div className="company-banner-contact">
-              <div className="site-breadcrumb-wpr">
-                <h2 className="breadcrumb-title">Donation</h2>
-            
-                <ul className="breadcrumb-menu clearfix" type="none">
-                  <li>
-                    <Link to="/" className="breadcrumb-link">Home</Link>
-                  </li>
-            
-                  <li className="px-2">/</li>
-            
-                  <li>Donation</li>
-                </ul>
-              </div>
-            </div>
+   
      <div className="company-banner-donation">
       <div className="site-breadcrumb-wpr">
         <h2 className="breadcrumb-title">Donation</h2>
@@ -121,7 +107,7 @@ const Donation = () => {
           <Col lg={8} md={12}>
             <Form
               onSubmit={handleSubmit}
-              className="shadow p-4 rounded bg-white pt-contact"
+              className="shadow p-4 rounded bg-white"
             >
               <h2 className="text-center mb-4">Donation Form</h2>
 

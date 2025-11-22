@@ -21,8 +21,8 @@ const Organization = () => {
         </ul>
       </div>
     </div>
-      <Container className='py-4 mt-4 pt-container'>
-        <Row className=' shadow p-4 rounded bg-white pt-contact '>
+      <Container className='py-4 pt-container'>
+        <Row className=' shadow p-4 rounded bg-white '>
 
           <div className='plant-main-box mt-2'><h2>About the Organization</h2>
             <p>Youth for Himalayas Trust is a community-driven environmental organization dedicated to protecting and restoring the natural beauty of the Himalayan region. Built on the belief that positive change begins with responsible action, our organization works tirelessly to conserve trees, safeguard native plant species, and promote sustainable living among Himalayan communities.</p>

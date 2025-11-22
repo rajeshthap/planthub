@@ -90,7 +90,7 @@ const InnerDashBoard = () => {
       <th>Phone</th>
       <th>Amount</th>
       <th>Status</th>
-      <th>Action</th>
+     
     </tr>
 
     {loading ? (
@@ -124,15 +124,7 @@ const InnerDashBoard = () => {
             <Badge bg="success">Paid</Badge>
           </td>
 
-          <td data-th="Action">
-            <Button
-              variant="primary" className="pt-donate-view"
-              size="sm"
-              onClick={() => handleViewSalary(emp)}
-            >
-              <AiFillEdit /> View
-            </Button>
-          </td>
+         
         </tr>
       ))
     ) : (

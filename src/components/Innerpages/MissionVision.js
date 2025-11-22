@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Footer from "../footer/Footer";
 import { Link } from 'react-router-dom';
 import "../../assets/css/Mission.css"
-import Mission from "../../assets/images/Green.jpg"
+import Mission from "../../assets/images/banner3.jpeg"
 const MissionVision = () => {
   return (
     <>

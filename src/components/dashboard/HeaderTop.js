@@ -22,7 +22,11 @@ import { useNavigate } from "react-router-dom";
 
 // 1. Accept searchTerm and setSearchTerm as props
 function HeaderTop ({ toggleSidebar, searchTerm, setSearchTerm }) {
-
+const handleLogout = () => {
+  localStorage.clear();      // remove saved tokens or data
+  sessionStorage.clear();    // optional
+  navigate("/");             // redirect to home or login
+};
   const navigate = useNavigate();
 
   const [notifications, setNotifications] = useState([
@@ -45,6 +49,7 @@ function HeaderTop ({ toggleSidebar, searchTerm, setSearchTerm }) {
       read: true,
     },
   ]);
+
 
   const [unreadCount, setUnreadCount] = useState(2);
 
@@ -124,9 +129,10 @@ function HeaderTop ({ toggleSidebar, searchTerm, setSearchTerm }) {
                     <FaCog className="me-2" /> Settings
                   </Dropdown.Item>
                   <Dropdown.Divider />
-                  <Dropdown.Item >
-                    <FaSignOutAlt className="me-2" /> Logout
-                  </Dropdown.Item>
+                 <Dropdown.Item >
+  <FaSignOutAlt className="me-2" onClick={handleLogout}/> Logout
+</Dropdown.Item>
+
                 </Dropdown.Menu>
               </Dropdown>
             </div>

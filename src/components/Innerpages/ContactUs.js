@@ -110,7 +110,7 @@ const ContactUs = () => {
     </ul>
   </div>
 </div>
-      <Container className="py-4 mt-4 pt-container">
+      <Container className="py-4 pt-container">
 
         {successMsg && (
           <div className="alert alert-success">{successMsg}</div>
@@ -119,7 +119,7 @@ const ContactUs = () => {
         <Row>
           {/* ------------------ LEFT SIDE: FORM (8 COL) ------------------ */}
           <Col lg={8} md={12}>
-            <Form onSubmit={handleSubmit} className="shadow p-4 rounded bg-white pt-contact ">
+            <Form onSubmit={handleSubmit} className="shadow p-4 rounded bg-white ">
               <h2 className="text-center mb-4">Contact Us</h2>
 
               <Row>
@@ -217,7 +217,7 @@ const ContactUs = () => {
 
           {/* ------------------ RIGHT SIDE: ADDRESS (4 COL) ------------------ */}
           <Col lg={4} md={12} className="mt-4 mt-lg-0 ">
-            <div className="shadow p-4 rounded bg-white pt-address">
+            <div className="shadow p-4 rounded bg-white pt-con">
               <h3 className="mb-3">Our Office</h3>
 
               <p><strong>Address:</strong><br />

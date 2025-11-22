@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Nav, Offcanvas, Collapse } from "react-bootstrap";
 import {
   FaTachometerAlt,
@@ -11,16 +11,27 @@ import {
 
 import Logo from "../../assets/images/plant-logo.png";
 import "../../assets/css/LeftNav.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 import { TbDeviceDesktopSearch } from "react-icons/tb";
 
 
-
-
-
-const LeftNav = ({ sidebarOpen, setSidebarOpen, isMobile, isTablet }) => {
+const LeftNav = ({ sidebarOpen, setSidebarOpen }) => {
    
+
+const [isMobile, setIsMobile] = useState(false);
+const [isTablet, setIsTablet] = useState(false);
+
+useEffect(() => {
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 767);
+        setIsTablet(window.innerWidth > 767 && window.innerWidth <= 991);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+}, []);
 
 
    

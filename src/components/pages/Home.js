@@ -14,11 +14,14 @@ import Water from "../../assets/images/Water.jpg";
 import Sacred from "../../assets/images/Sacred.jpg";
 import Urban from "../../assets/images/Urban.webp";
 import Treehealth from "../../assets/images/Treehealth.jpg";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 const Home = () => {
+  const navigate = useNavigate();
+
   // State for donation form
   const [donationAmount, setDonationAmount] = useState('500');
   const [customAmount, setCustomAmount] = useState('');
@@ -235,7 +238,16 @@ const Home = () => {
                       <Card.Text>{project.description}</Card.Text>
                     </Card.Body>
                     <Card.Footer className="bg-white border-0">
-                      <Button variant="outline-success">Learn More</Button>
+                     <Button
+  variant="outline-success"
+  onClick={() => {
+    navigate("/");
+    window.scrollTo(0, 0); 
+  }}
+>
+  Learn More
+</Button>
+
                     </Card.Footer>
                   </Card>
                 </Col>

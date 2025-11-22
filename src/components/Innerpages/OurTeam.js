@@ -62,8 +62,8 @@ function OurTeam() {
     </ul>
   </div>
 </div>
-      <Container className='py-4 mt-4 pt-container'>
-      <Row className=' shadow p-4 rounded bg-white pt-contact-team '>
+      <Container className='py-4 pt-container'>
+      <Row className=' shadow p-4 rounded bg-white'>
  
         <div className=' mt-2'><h2>Our Team</h2>
            <div className="team-container">

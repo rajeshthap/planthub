@@ -63,7 +63,7 @@
   padding: 60px;
 }
 .company-banner-contact{
- background-image: url('../../assets/images/banner5.jpg');
+ background-image: url('../../assets/images/banner6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,4 +140,41 @@
 .breadcrumb-menu {
   justify-content: center;
   display: flex;
+}
+
+.pt-con {
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 30px;
+  transition: all 0.3s ease;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.pt-con:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.pt-con h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: green; /* Elegant dark blue */
+  margin-bottom: 20px;
+}
+
+.pt-con p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.pt-con strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.pt-con br {
+  margin-bottom: 5px;
 }

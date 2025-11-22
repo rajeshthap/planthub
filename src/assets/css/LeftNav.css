@@ -659,6 +659,7 @@ border: none !important;
 /* Mobile Sidebar */
 .mobile-sidebar {
      background-color: #006edc;
+     width: 100% !important;
 }
 
 .mobile-sidebar .nav-item {
