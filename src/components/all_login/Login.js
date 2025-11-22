@@ -8,7 +8,7 @@ function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
-const navigate = useNavigate();
+    const navigate = useNavigate();
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -44,7 +44,7 @@ const navigate = useNavigate();
     };
     return (
         <div>
-            <Container className='py-4 mt-4 pt-container'>
+            <Container className='py-4 mt-4 loginnew-container'>
                 <Row className=' p-4 rounded bg-white pt-contact justify-content-center'>
                     <div className='col-lg-12 col-md-8 col-12'>
                         <div className='plant-main-box mt-2'>
